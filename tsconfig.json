@@ -3,24 +3,19 @@
     "outDir": "lib",
     "target": "es5",
     "lib": ["es6", "esnext", "dom"],
-    "module": "commonjs",
+    "module": "es2015",
     "declaration": true,
+    "declarationDir": "lib",
     "sourceMap": true,
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
     "jsx": "react",
     "esModuleInterop": true,
+    "moduleResolution": "node",
     "resolveJsonModule": true
   },
-  "files": [
-    "./node_modules/@testing-library/jest-dom/extend-expect.d.ts"
-  ],
+  "files": ["./node_modules/@testing-library/jest-dom/extend-expect.d.ts"],
   "include": ["src"],
-  "exclude": [
-    "node_modules",
-    "lib",
-    "dist",
-    "example"
-  ]
+  "exclude": ["node_modules", "lib", "dist", "example", "src/*.test.ts", "src/*.test.tsx", "src/__snapshots__"]
 }
